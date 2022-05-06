@@ -19,7 +19,7 @@ module.exports = {
         discord: {
             id: "972198959114235934",
             secret: "",
-            callback: "https://awardbot-demo.herokuapp.com/v1/auth/callback",
+            callback: "https://joshuawithoutua.award.repl.co/v1/auth/callback",
             scopes: [ "identify", "guilds" ],
             prompt: "none",
             botInvite: "https://discord.com/oauth2/authorize?client_id=731219163317534740&scope=bot%20applications.commands&response_type=code&permissions=8",
@@ -139,8 +139,8 @@ module.exports = {
     promoLength: 15,
     emojis: [ '🌵', '🎄', '🌲', '🌳', '🌴', '🌱', '🌿', '🍀', '🎍', '🎋', '🍃', '🍂', '🍁', '🍄', '🐚', '🌾', '💐', '🐠', '🐟', '🐬', '🐳', '🌷', '🌹', '🌺', '🌸', '🌼', '🌻', '🌞', '🌝', '🌟', '✨', '⚡', '💥', '🌈', '🍩', '🍪', '🏆', '🐧', '🐦', '🐤' ],
     sessionKey: "vhRYmP1A$zKdlge$#c8@@jLc!Gi5VO$yvl^nJCv2ZQba!%C",
-    mongoURL: "",
-    token: "",
+    mongoURL: process.env.MONGO,
+    token: process.env.TOKEN,
     cmdDir: "./src/commands",
     benefits: _lvl => ([
         {
